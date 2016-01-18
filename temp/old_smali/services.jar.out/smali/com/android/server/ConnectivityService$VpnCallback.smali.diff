@@ -1,0 +1,13 @@
+*** ./smali/com/android/server/ConnectivityService$VpnCallback.smali	2016-01-18 18:51:08.942954000 +0100
+--- /home/guess/patchrom/d855/temp/new_smali/services.jar.out/./smali/com/android/server/ConnectivityService$VpnCallback.smali	2016-01-18 18:52:08.170954000 +0100
+***************
+*** 215,220 ****
+--- 215,222 ----
+  
+      invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
+  
++     invoke-static {p1}, Lcom/android/server/ConnectivityServiceInjector;->notifyVpnStatusChanged(Landroid/net/NetworkInfo;)V
++ 
+      return-void
+  .end method
+  

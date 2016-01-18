@@ -1,0 +1,20 @@
+*** ./smali/com/android/internal/telephony/SmsMessageBase.smali	2016-01-18 18:51:16.082954000 +0100
+--- /home/guess/patchrom/d855/temp/new_smali/telephony-common.jar.out/./smali/com/android/internal/telephony/SmsMessageBase.smali	2016-01-18 18:52:16.098954000 +0100
+***************
+*** 171,176 ****
+--- 171,185 ----
+      return-object v0
+  .end method
+  
++ .method public getEncodingType()I
++     .locals 1
++ 
++     .prologue
++     const/4 v0, 0x0
++ 
++     return v0
++ .end method
++ 
+  .method public getIndexOnIcc()I
+      .locals 1
+  

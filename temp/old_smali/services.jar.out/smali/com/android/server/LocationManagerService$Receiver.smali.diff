@@ -1,0 +1,19 @@
+*** ./smali/com/android/server/LocationManagerService$Receiver.smali	2016-01-18 18:51:09.554954000 +0100
+--- /home/guess/patchrom/d855/temp/new_smali/services.jar.out/./smali/com/android/server/LocationManagerService$Receiver.smali	2016-01-18 18:52:08.818954000 +0100
+***************
+*** 13,19 ****
+  .end annotation
+  
+  .annotation system Ldalvik/annotation/InnerClass;
+!     accessFlags = 0x12
+      name = "Receiver"
+  .end annotation
+  
+--- 13,19 ----
+  .end annotation
+  
+  .annotation system Ldalvik/annotation/InnerClass;
+!     accessFlags = 0x10
+      name = "Receiver"
+  .end annotation
+  

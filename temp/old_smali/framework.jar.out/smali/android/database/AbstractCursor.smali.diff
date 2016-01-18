@@ -1,0 +1,20 @@
+*** ./smali/android/database/AbstractCursor.smali	2016-01-18 18:51:27.670954000 +0100
+--- /home/guess/patchrom/d855/temp/new_smali/framework.jar.out/./smali/android/database/AbstractCursor.smali	2016-01-18 18:52:28.538954000 +0100
+***************
+*** 825,830 ****
+--- 825,839 ----
+      goto :goto_0
+  
+      :cond_4
++     invoke-static {p0, p1}, Landroid/database/AbstractCursorInjector;->checkPosition(Landroid/database/AbstractCursor;I)Z
++ 
++     move-result v2
++ 
++     if-nez v2, :cond_miui_0
++ 
++     return v2
++ 
++     :cond_miui_0
+      iput p1, p0, Landroid/database/AbstractCursor;->mPos:I
+  
+      iget v2, p0, Landroid/database/AbstractCursor;->mRowIdColumnIndex:I
